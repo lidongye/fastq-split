@@ -126,12 +126,9 @@ def split_fastq(input_fastq):
 
 if __name__ == "__main__":
     parser = OptionParser()
-    parser.add_option("-f", "--fastq", dest="input_fastq",
+    parser.add_option("-i", "--input_fastq", dest="input_fastq",
                       help="single end fastq file")
-    parser.add_option("-t", "--type", dest="file_type",
-                      help="input file type fq(default) or gz")
     (options, args) = parser.parse_args()
-
     input_fastq = options.input_fastq
 
     split_fastq(input_fastq)
