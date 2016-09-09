@@ -1,4 +1,4 @@
-#!/user/bin/env python
+#!/usr/bin/env python
 import os
 from optparse import OptionParser
 import gzip
