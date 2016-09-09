@@ -6,16 +6,6 @@ import re
 
 import common_function
 
-def get_length(line):
-    """
-    get length from first line
-
-    :param line:
-    :return:
-    """
-
-    n = 202
-    return n
 
 def split_line0(line):
     """
@@ -84,6 +74,9 @@ def get_output_filenames(input_fastq):
     :return:
     """
     [file_name, ext] = os.path.splitext(input_fastq)
+    if ext == ".gz":
+        [file_name, ext_2] = os.path.splitext(file_name)
+        ext = ext_2+ext
     return ["%s_1%s" % (file_name, ext), "%s_2%s" % (file_name, ext)]
 
 
