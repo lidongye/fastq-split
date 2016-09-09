@@ -4,8 +4,8 @@ split single-end fastq files to paired-end
 ##Getting started
     git clone https://github.com/lidongye/fastq-split.git
     cd fastq-split
-    python src/split-fastq.py -i testdata/GSM1515813_head100.fastq.gz
-    python src/split-fastq.py -i testdata/GSM1515813_head100.fastq
+    python src/split-fastq.py -i test/GSM1515813_head100.fastq.gz
+    python src/split-fastq.py -i test/GSM1515813_head100.fastq
 
 ##Examples
     ###single-end
